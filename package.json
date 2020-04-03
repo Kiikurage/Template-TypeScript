@@ -5,22 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint -c ./.eslintrc.json '{src,test}/**/*.{ts,js}'",
-    "lint:fix": "npm run lint -- --fix"
+    "lint": "eslint -c .eslintrc.js '{src,test}/**/*.{ts,js}' --fix"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-typescript": "^7.7.4",
-    "@types/jest": "^24.0.15",
-    "@typescript-eslint/eslint-plugin": "^2.10.0",
-    "@typescript-eslint/eslint-plugin-tslint": "^2.10.0",
-    "@typescript-eslint/parser": "^2.10.0",
-    "@typescript-eslint/typescript-estree": "^2.10.0",
-    "eslint": "^6.0.1",
-    "jest": "^24.8.0",
-    "tslint": "^5.18.0",
-    "typescript": "^3.5.2"
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.1.5",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@typescript-eslint/typescript-estree": "^2.26.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.2.7",
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
   }
 }
