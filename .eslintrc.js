@@ -7,11 +7,7 @@ module.exports = {
         node: false,
     },
     ignorePatterns: ['./node_modules', './package.json', './package-lock.json'],
-    rules: {
-        'no-inner-declarations': 'off',
-        'semi': 'error',
-        'space-infix-ops': 'error',
-    },
+    rules: {},
     overrides: [
         {
             files: ['*.ts', '*.tsx'],
@@ -27,18 +23,9 @@ module.exports = {
                 'plugin:import/typescript',
             ],
             rules: {
-                '@typescript-eslint/explicit-function-return-type': 'off',
                 '@typescript-eslint/no-use-before-define': 'off',
-                '@typescript-eslint/no-enum': 'off',
                 '@typescript-eslint/no-namespace': 'off',
                 '@typescript-eslint/no-non-null-assertion': 'error',
-                'no-restricted-syntax': [
-                    'error',
-                    {
-                        selector: 'TSEnumDeclaration',
-                        message: "Don't use enums. Use union type instead.",
-                    },
-                ],
             },
         },
         {
